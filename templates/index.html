@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>bilibili排行榜分析</h1>
+
+    </header>
+    <section class="mainbox ">
+        <div class="column ">
+            <div class="panel bar ">
+                <h2>视频时长与播放完成度</h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+            <div class="panel line ">
+                <h2>综合得分与评论点赞投币收藏趋势</h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+            <div class="panel pie ">
+                <h2>游客画像</h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+        </div>
+        <div class="column ">
+            <div class="map ">
+                <div class="chart ">
+                    <div class="box1 ">
+                        <h2>综合得分漏斗图 </h2>
+                        <div class="bot1 "></div>
+                    </div>
+                    <div class="box2 ">
+                        <h2>bilibili排行榜 </h2>
+                        <div class="bot2 ">
+
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1MU4y1t7mD"> 1 余景天粉丝：“他们只是失去了生命，我哥……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1H64y127hM"> 2 【官方MV】许嵩 - 乌鸦</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1Qh411m77i"> 3 “恨国党”许可馨改名许立娜，从美国回来了……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV11h411m7ZE"> 4 猫：我没有耳朵和手，但我很幸运！</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1Af4y1W7z1"> 5 倒牛奶算什么，我家哥哥可是失去出道的机……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV15U4y1t7sJ"> 6 跨栏真的是这么跨的吗？</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1UK4y1w7VG"> 7 4年，再见了北京！</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1W84y1c7Lk"> 8 爱情能否经得住倒放的考验？</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1Zy4y1s7ow"> 9 ⚡⚡两面包夹芝士⚡⚡</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1NV411E7Q3"> 10 《可露希尔的秘密档案》</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1J541137FB"> 11 【半佛】显卡离奇消失，内鬼中饱私囊？</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1L64y127fr"> 12 我真没见过这么离谱的选修课 </a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1cf4y1W771"> 13 【明日方舟】3000块全没了！ </a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1f64y117br"> 14 C菌《生化危机8》完整实况连载 B站X怂…… </a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1f54y1j7Hm"> 15 腾讯因高管奇葩言论再次被推上风口浪 ……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1eV41177Xz"> 16 全程高能！笑到窒息！盘点柯南TV沙雕 ……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1z54y157UR"> 17 六星干员杨颜XF·满信赖档案语音【明……</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1iU4y187JA"> 18 【逗鱼时刻】第300期 咱们再战300回合！</a></div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV12N411f7gv"> 19 【Kleiner Pixel】 伊莎贝拉 約定的……</a> </div>
+                            <div class="top "><a href="http://www.bilibili.com/video/BV1WK4y1d7QD"> 20 ⚡⚡谁是我的新郎⚡⚡</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map1 ">
+                    <h2>白嫖占比 </h2>
+                    <div class="chart3 "></div>
+                </div>
+            </div>
+        </div>
+        <div class="column ">
+            <div class="panel bar1 ">
+                <h2>综合得分计算指标 </h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+            <div class="panel line1 ">
+                <h2>视频时长与视频的受欢迎程度
+                </h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+            <div class="panel pie1 ">
+                <h2>bilibili</h2>
+                <div class="chart "></div>
+                <div class="panel-footer "></div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/js/flexible.js "></script>
+    <script src="/static/js/jquery.js "></script>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>
